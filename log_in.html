@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="Image\icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="log_in.css">
+</head>
+
+<body>
+    <div class="nav_container">
+        <div class="logo">
+            <img src="Image\logo.png">
+            <a href="index.html">
+                <h1>Estelle Conservatory</h1>
+            </a>
+        </div>
+
+        <div class="navtop">
+            <nav class="navbar" id="navbar">
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="progress.html">Progress Tracking</a>
+
+                <div class="dropdown">
+                    <a href="">More</a>
+                    <div class="dropdown_content">
+                        <a href="payment.html">Payment</a>
+                        <a href="booking.html">Resource Booking</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="log_in">
+                <img src="Image/log_in.png">
+                <a href="log_in.html">Log In</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="form-container">
+            <h2>Log In</h2>
+            <form action="#" class="login-form">
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+                    <span class="material-symbols-rounded">
+                        mail
+                    </span>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    <span class="material-symbols-rounded">
+                        passkey
+                    </span>
+                </div>
+
+                <div class="forgot_rmb">
+                    <label class="custom-box">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+
+
+                    <a href="#" id="forgotPassword" class="forgot-pass-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+                <p class="login-note">For students of this conservatory only. If you are not registered yet, please
+                    contact the conservatory for more information.</p>
+            </form>
+        </div>
+    </section>
+
+    <script src="nav.js"></script>
+    <script src="log_in.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Libertinus+Sans:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-color: #5a002b;
+    --primary-color-light: #ffe3f1;
+    --background-color: #81003e;
+    --main-text: #303335e7;
+    --text-dark: #dc006a;
+    --max-width: 1200px;
+}
+
+header p,
+header a {
+    text-decoration: none;
+    color: #303335e7;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.payment-wrap {
+    max-width: 600px;
+    margin: 40px auto;
+    margin-bottom: 60px;
+    background: #f3eef0;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .05);
+    font-family: "Lora", serif;
+}
+
+.payment-wrap h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    font-size: 26px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    margin-bottom: 10px;
+    color: var(--main-text);
+    font-size: 16px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-row input {
+    letter-spacing: 1px;
+}
+
+.form-row select {
+    appearance: none;
+    flex: 1;
+    width: auto;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.4s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: 1px solid var(--primary-color);
+}
+
+.pay-method {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.pay-method input[type="radio"] {
+    width: 14px;
+    height: 14px;
+}
+
+.pay-method label {
+    margin-top: 1px;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pay-btn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color);
+    color: white;
+    font-size: 18px;
+    font-family: "Libertinus Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: background 0.8s ease;
+}
+
+.pay-btn:hover {
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    background-color: white;
+}
+
+@media (max-width: 393px) {
+    section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .payment-wrap h2 {
+        font-size: 22px;
+    }
+
+    .pay-method {
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .pay-method label {
+        margin-top: 7px !important;
+    }
+}
